@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="docs/css/reset.css">
+    <link rel="stylesheet" href="docs/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> 
+
+    <title>Encriptador de Texto</title>
+</head>
+<body>
+    <header>
+        <div class="logo-head">
+            <img class="logo" src="docs/img/logo.svg" alt="Logo del Autor">
+        </div>
+    </header>
+    <main>
+        <section class="encriptado">
+            <div class="mensaje-principal">
+                <h1 class="titulo">Encriptador de Texto</h1>
+                <!-- <textarea class="mensaje" type="text"  placeholder="Ingrese el texto aquí..."> -->
+                <div class="div-mensaje">
+                    <textarea class="mensaje" type="text" placeholder="Ingrese el texto aquí..." spellcheck="false"></textarea>
+                </div>
+                
+                <div class="icono-botones">
+                    <p><i class="fas fa-exclamation-circle"></i> Solo letra minúscula y sin acento</p>
+                    <div class="botones">
+                        <button class="btnEnc">Encriptar</button>
+                        <button class="btnDesenc">Desencriptar</button>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="mensaje-copia">
+                <h2 class="msg-copia">Mensaje:</h2>
+                <div class="esconder">
+                    <img class="img-nomsg" id="msg-no" src="docs/img/no-mensaje.png" alt="imagen de no existe mensaje">
+                    <h2 class="no-msg-copia">Ningún mensaje fue encontrado</h2>
+                    <h4 class="texto-encrip">Ingresa el texto que desees encriptar o desencriptar</h4>
+                </div>
+                <textarea class="copia" type="text" id="txtCopia" cols="30" rows="10" readonly></textarea>
+                <br>
+                <div class="div-btncopia">
+                    <button class="btnCopiar">Copiar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <img class="logo-footer" src="docs/img/logo.svg">
+        <p class="copyright">&copy Copyright Oscar Sosa Garcia - 2022</p>
+    </footer>
+    <script src="docs/js/encriptado.js"></script>
+</body>
+</html>

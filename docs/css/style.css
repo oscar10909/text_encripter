@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #FFDB5E;
+    font-family: 'Montserrat', sans-serif;
+    /* line-height: 150%; */
+}
+
+header{
+    height:  150px;
+}
+
+.logo{
+    width: 200px;
+    position: relative;
+    top: -20px;
+    left: 20px;
+}
+
+main{
+    height: auto;
+} 
+
+.encriptado{
+    position: relative;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+.mensaje-principal p, .botones{
+    bottom: 200px;
+    margin-left: 100px;
+}
+
+.mensaje-principal{
+    /* position: absolute; */
+    /* display: inline-block; */
+    float: left;
+    top: 0;
+    width: 70%;
+    /* margin-bottom: 50px; */
+    /* padding: 40px 40px; */
+}
+
+.titulo{
+    color: #356EA9;
+    font-size: 56px;
+    /* position: relative; */
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.div-mensaje{
+    height: 580px;
+}
+
+.mensaje::placeholder{
+    color: #356EA9;
+}
+
+.mensaje{
+    position: relative;
+    background: #FFDB5E;
+    height: 48px;
+    width: 80%;
+    margin-left: 100px;
+    overflow: hidden;
+    resize: none;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #356EA9;
+    font-size: 32px;
+    border: none;
+    max-height: 550px;
+}
+
+.mensaje:focus{
+    padding: 4px;
+    background: #f1dd92;
+}
+
+.mensaje::-webkit-scrollbar{
+    width: 0;
+}
+
+.icono-botones p{
+    font-size: 16px;
+    color: #43B1A4;
+    margin-bottom: 15px;
+}
+
+i .fa-circle-exclamation{
+    font-size: 24px;
+}
+
+.mensaje-principal .icono-botones{
+    /* position: absolute; */
+    margin: 30px 0;
+    position: inherit;
+}
+
+.btnEnc{
+    width: 328px;
+    height: 68px;
+    border-radius: 24px;
+    border: none;
+    font-size: 16px;
+    background: #43B1A4;
+    color: white;
+    font-weight: bold;
+    transition: 1s all;
+}
+
+.btnEnc:hover{
+    background: #356EA9;
+    transform: scale(1.1); /* rotate(70deg);*/
+}
+
+.btnDesenc{
+    width: 328px;
+    height: 68px;
+    border-radius: 24px;
+    font-size: 16px;
+    border-color: #43B1A4;
+    border-style: solid;
+    background: white;
+    color: #43B1A4;
+    font-weight: bold;
+    margin-left: 20px;
+    transition: .7s all;
+}
+
+.btnDesenc:hover{
+    background: #ffffff;
+    border-color: #356EA9;
+    border-width: 4px;
+    color: #356EA9;
+    transform: scale(1.1); 
+    transition: 1s all;
+}
+
+.mensaje-copia{
+    float: left;
+    top: 0;
+    /* padding: 20px 20px; */
+    background: #43B1A4;
+    width: 28%;
+    /* height: 400px; */
+    border-radius: 20px;
+    padding: 10px;
+    position: relative;
+    justify-content: center;
+}
+
+.msg-copia{
+    font-weight: bold;
+    font-size: 32px;
+    color: white;
+    padding: 20px 0 0 20px;
+}
+
+.img-nomsg{
+    width: 350px;
+    /* centrar imagen */
+    display: block;
+    margin: auto;
+}
+
+.no-msg-copia{
+    font-size: 32px;
+    font-weight: normal;
+    color: white;
+    text-align: center;
+}
+
+.texto-encrip{
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+}
+
+.copia{
+    /* visibility: hidden; */
+    display: none;
+    width: 84%;
+    padding: 30px;
+    /* overflow: hidden; */
+    resize: none;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 16px;
+    border: none;
+    background: #43B1A4;
+    height: 540px;
+}
+
+/* .div-btncopia{
+    height: 68px;
+    text-align: center;
+} */
+
+.div-btncopia{
+    width: 370px;
+    position: absolute;
+    border-width: 2px;
+    bottom: 30px;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.btnCopiar{
+    width: 328px;
+    height: 68px;
+    border-radius: 24px;
+    color: white;
+    border-color: white;
+    font-size: 16px;
+    background: #43B1A4;
+    font-weight: bold;  
+    transition: 1s all;
+    border-style: solid;
+    margin-left: 15px;
+}
+
+.btnCopiar:hover{
+    transform: scale(1.1);
+    border-width: 3px;
+    background: #356EA9;
+}
+
+footer{
+    text-align: center;
+    background-color: rgb(243, 225, 158);
+    margin: 0 auto;
+    padding: 20px;
+    color: #356EA9;
+    font-weight: bold;
+}
+
+.logo-footer{
+    width: 100px;
+}
+
+
+/* Diseño para tabletas */
+@media only screen and (max-width: 780px) {
+    header{
+        height: 50px;
+    }
+
+    .logo{
+        width: 100px;
+        top: -10px;
+    }
+
+    .encriptado{
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .mensaje-principal{
+        float: left;
+        top: 0;
+        width: 100%;
+    }
+
+    .titulo{
+        font-size: 48px;
+    }
+
+    .div-mensaje{
+        height: 360px;
+        padding: 0 50px;
+    }
+
+    .mensaje{
+        width: 96%;
+        margin: 0 auto;
+        max-height: 330px;
+    }
+
+    .icono-botones p, .botones{
+        margin-left: 35px;
+    }
+
+    .mensaje-copia{
+        width: 100%;
+        height: 650px;
+    }
+
+    .copia{
+        height: auto;
+    }
+
+    .mensaje-copia .div-btncopia{
+        width: 97%;
+    }
+
+    .btnCopiar{
+        margin-left: 25%;
+    }
+	
+} 
+
+@media screen and (max-width:480px){
+    header{
+        height: 50px;
+    }
+
+    .logo{
+        width: 100px;
+        top: -10px;
+    }
+
+    .encriptado{
+        margin: 0;
+        display: flex;
+    }
+
+    .mensaje-principal{
+        float: left;
+        top: 0;
+        width: 100%;
+    }
+
+    .titulo{
+        font-size: 50px;
+    }
+
+    .div-mensaje{
+        height: 360px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .mensaje{
+        width: 100%;
+        padding: 0;
+        max-height: 330px;
+    }
+    
+    .botones{
+        margin: 6%;
+    }
+
+    .icono-botones p{
+        margin: 6%;
+    }
+
+    .btnDesenc{
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .mensaje-copia{
+        width: 100%;
+        height: 650px;
+    }
+
+    .copia{
+        height: auto;
+    }
+
+    .btnCopiar{
+        margin-left: 15px;
+    }
+}
