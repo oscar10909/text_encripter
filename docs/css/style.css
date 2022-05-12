@@ -50,6 +50,7 @@ main{
     color: #356EA9;
     font-size: 56px;
     /* position: relative; */
+    display: block;
     text-align: center;
     margin-bottom: 20px;
     font-weight: bold;
@@ -69,7 +70,8 @@ main{
     height: 48px;
     width: 80%;
     margin-left: 100px;
-    overflow: hidden;
+    /* overflow: hidden; */
+    /* overflow-y: scroll; */
     resize: none;
     padding: 5px;
     border-radius: 5px;
@@ -79,6 +81,7 @@ main{
     font-size: 32px;
     border: none;
     max-height: 550px;
+    /* display: none; */
 }
 
 .mensaje:focus{
@@ -86,9 +89,9 @@ main{
     background: #f1dd92;
 }
 
-.mensaje::-webkit-scrollbar{
+/* .mensaje::-webkit-scrollbar{
     width: 0;
-}
+} */
 
 .icono-botones p{
     font-size: 16px;
@@ -188,11 +191,10 @@ i .fa-circle-exclamation{
 }
 
 .copia{
-    /* visibility: hidden; */
     display: none;
     width: 84%;
     padding: 30px;
-    /* overflow: hidden; */
+    overflow-y: auto;
     resize: none;
     outline: none;
     font-family: 'Montserrat', sans-serif;
@@ -202,11 +204,6 @@ i .fa-circle-exclamation{
     background: #43B1A4;
     height: 540px;
 }
-
-/* .div-btncopia{
-    height: 68px;
-    text-align: center;
-} */
 
 .div-btncopia{
     width: 370px;
@@ -229,7 +226,7 @@ i .fa-circle-exclamation{
     font-weight: bold;  
     transition: 1s all;
     border-style: solid;
-    margin-left: 15px;
+    margin-left: 20px;
 }
 
 .btnCopiar:hover{
@@ -249,6 +246,45 @@ footer{
 
 .logo-footer{
     width: 100px;
+    margin-bottom: -25px;
+}
+
+/* redes */
+.redes{
+	/* width: 45px; */
+	/* height: 45px; */
+	/* bottom: 40px; */
+    /* left: 120px; */
+	/* background-color: #356EA9; */
+	color: #356EA9; 
+	/* border-radius: 50%; */
+    /* border: 1px solid #fff; */
+	text-align:center;
+  	font-size:45px;
+	/* box-shadow: 2px 2px 5px #999; */
+    z-index: 100;
+    /* padding: 15px; */
+    text-decoration: none;
+    margin: 15px;
+    transition: ease 0.3s;
+}
+
+.redes:hover{
+	text-decoration: none;
+	color: #43B1A4;
+    transform: scale(1.2);
+    transition: 0.3s all;
+    text-decoration: none;
+}
+
+.fa-linkedin-in:hover, .fa-github:hover{
+    transform: scale(1.2);
+    transition: 0.3s all;
+	/* margin-top: 14px; */
+}
+
+.copyright{
+    margin-top: 25px;
 }
 
 

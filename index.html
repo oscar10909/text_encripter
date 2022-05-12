@@ -11,6 +11,7 @@
     <title>Encriptador de Texto</title>
 </head>
 <body>
+    <!-- <video src="Imagenes/Estrellas.mp4" autoplay="true" muted="true" loop="true"></video> -->
     <header>
         <div class="logo-head">
             <img class="logo" src="docs/img/logo.svg" alt="Logo del Autor">
@@ -22,14 +23,14 @@
                 <h1 class="titulo">Encriptador de Texto</h1>
                 <!-- <textarea class="mensaje" type="text"  placeholder="Ingrese el texto aquí..."> -->
                 <div class="div-mensaje">
-                    <textarea class="mensaje" type="text" placeholder="Ingrese el texto aquí..." spellcheck="false"></textarea>
+                    <textarea class="mensaje" id="encriptado" type="text" placeholder="Ingrese el texto aquí..." required></textarea>
                 </div>
                 
                 <div class="icono-botones">
                     <p><i class="fas fa-exclamation-circle"></i> Solo letra minúscula y sin acento</p>
                     <div class="botones">
-                        <button class="btnEnc">Encriptar</button>
-                        <button class="btnDesenc">Desencriptar</button>
+                        <button class="btnEnc btn">Encriptar</button>
+                        <button class="btnDesenc btn">Desencriptar</button>
                     </div>
                 </div>
                 
@@ -44,13 +45,21 @@
                 <textarea class="copia" type="text" id="txtCopia" cols="30" rows="10" readonly></textarea>
                 <br>
                 <div class="div-btncopia">
-                    <button class="btnCopiar">Copiar</button>
+                    <button class="btnCopiar btn">Copiar</button>
                 </div>
             </div>
         </section>
     </main>
     <footer>
         <img class="logo-footer" src="docs/img/logo.svg">
+        <div>
+            <a href="https://www.linkedin.com/in/oscar-sosa10969/" class="redes" >
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/oscar10909/text_encripter" class="redes">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
         <p class="copyright">&copy Copyright Oscar Sosa Garcia - 2022</p>
     </footer>
     <script src="docs/js/encriptado.js"></script>
